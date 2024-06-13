@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featurepreneurship</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .search-bar {
+            width: 60%; /* Adjust the width as needed */
+            max-width: 5000px; /* Optional: Set a maximum width if needed */
+        }
+        
+        /* Additional styling for input if needed */
+        .search-bar input {
+            height: 40px; /* Example height */
+            padding: 10px; /* Example padding */
+            font-size: 16px; /* Example font size */
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white border-bottom py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo font-weight-bold">Featurepreneur</div>
+            <div class="search-bar w-80">
+                <input type="text" class="form-control" placeholder="Search...">
+            </div>
+            <button class="btn btn-primary">Login</button>
+        </div>
+    </header>
+    <main class="mt-4">
+        <div class="container">
+            <nav class="nav nav-pills mb-4">
+                <a class="nav-link" href="#">Trending repositories</a>
+                <a class="nav-link active" href="#">Trending developers</a>
+            </nav>
+            <div class="alert alert-info text-center" role="alert">
+                GitHub trending developers data is fetched since 16 Oct, 2023. Developers details are updated every 48 hours.
+            </div>
+            <div class="d-flex justify-content-between mb-4">
+                <div>
+                    <label for="days">Trending developers:</label>
+                    <select id="days" class="form-control d-inline-block w-auto">
+                        <option value="all-days">All days</option><option>weekly</option><option>monthly</option><option>yearly</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div>
+                    <label for="languages">All Languages:</label>
+                    <select id="languages" class="form-control d-inline-block w-auto">
+                        <option value="all-languages">All Languages</option><option>English</option><option>German</option><option>Danish</option><option>Tamil</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+                <div>
+                    <label for="show">Show:</label>
+                    <select id="show" class="form-control d-inline-block w-auto">
+                        <option>100</option><option>50</option><option>30</option><option>20</option><option>10</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/1" class="rounded-circle mb-3" alt="emilk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">emilk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Emil Ernerfeldt</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 93 times of all days.</p>
+                            <p class="text-muted">Rust coder, creator of egui, CTO of rerun.io</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/2" class="rounded-circle mb-3" alt="azure-sdk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">azure-sdk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Azure SDK Bot</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 78 times of all days.</p>
+                            <p class="text-muted">Service account for the Azure SDK Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/3" class="rounded-circle mb-3" alt="oobabooga" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">oobabooga</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Oobabooga</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 77 times of all days.</p>
+                             <p class="text-muted">Lvmin Zhang (Lyumin Zhang)</p>
+                            <!-- Additional text if needed -->
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/1" class="rounded-circle mb-3" alt="emilk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">emilk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Emil Ernerfeldt</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 93 times of all days.</p>
+                            <p class="text-muted">Rust coder, creator of egui, CTO of rerun.io</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/2" class="rounded-circle mb-3" alt="azure-sdk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">azure-sdk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Azure SDK Bot</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 78 times of all days.</p>
+                            <p class="text-muted">Service account for the Azure SDK Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/3" class="rounded-circle mb-3" alt="oobabooga" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">oobabooga</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Oobabooga</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 77 times of all days.</p>
+                             <p class="text-muted">Lvmin Zhang (Lyumin Zhang)</p>
+                <!-- Repeat the above col for each developer card -->
+            </div>
+        </div>
+        </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/1" class="rounded-circle mb-3" alt="emilk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">emilk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Emil Ernerfeldt</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 93 times of all days.</p>
+                            <p class="text-muted">Rust coder, creator of egui, CTO of rerun.io</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/2" class="rounded-circle mb-3" alt="azure-sdk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">azure-sdk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Azure SDK Bot</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 78 times of all days.</p>
+                            <p class="text-muted">Service account for the Azure SDK Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/3" class="rounded-circle mb-3" alt="oobabooga" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">oobabooga</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Oobabooga</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 77 times of all days.</p>
+                             <p class="text-muted">Lvmin Zhang (Lyumin Zhang)</p>
+                            <!-- Additional text if needed -->
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/1" class="rounded-circle mb-3" alt="emilk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">emilk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Emil Ernerfeldt</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 93 times of all days.</p>
+                            <p class="text-muted">Rust coder, creator of egui, CTO of rerun.io</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/2" class="rounded-circle mb-3" alt="azure-sdk" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">azure-sdk</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Azure SDK Bot</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 78 times of all days.</p>
+                            <p class="text-muted">Service account for the Azure SDK Team</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://avatars.githubusercontent.com/u/3" class="rounded-circle mb-3" alt="oobabooga" style="width: 100px; height: 100px;">
+                            <h5 class="card-title text-primary">oobabooga</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Oobabooga</h6>
+                            <a href="#" class="btn btn-link text-warning">Visit GitHub</a>
+                            <p class="card-text">Featured on GitHub Trending 77 times of all days.</p>
+                             <p class="text-muted">Lvmin Zhang (Lyumin Zhang)</p>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main content of the page -->
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4 pb-0">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase" alt="Trendshift Logo" class="footer-logo"> Featurepreneur</h5>
+                    <p>
+                        Data is proudly backed up by <a href="#" class="text-primary">Onedump</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg mx-2"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-github fa-lg mx-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Featurepreneur, created by <a class="text-primary" href="#">Ivy Hulagno</a> with <span class="text-danger">&hearts;</span>
+        </div>
+        <div class="text-right p-3">
+            <a href="#" class="btn btn-primary btn-sm">Back to Top</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

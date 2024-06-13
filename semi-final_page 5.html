@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training an Expert Finance LLM</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #3949ab;
+            color: #fff;
+        }
+
+        .logo {
+            width: 65px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .event {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 60px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .event-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .speaker-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+
+        .event-info h1 {
+            color: #3949ab;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .event-info p {
+            color: #616161;
+            margin: 5px 0;
+        }
+
+        .btn-primary-custom {
+            background-color: #3949ab;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #303f9f;
+        }
+
+        .ticket-options {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .ticket-options h2 {
+            color: #3949ab;
+            margin-bottom: 20px;
+        }
+
+        .btn-secondary-custom {
+            background-color: #42a5f5;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-secondary-custom:hover {
+            background-color: #1e88e5;
+        }
+
+        .about-event, .speaker {
+            padding: 60px 100px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        .about-event h2, .speaker h2 {
+            color: #3949ab;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #3949ab;
+            padding: 20px 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .footer-content a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-content a:hover {
+            color: #ffeb3b;
+        }
+
+        .social-icons a {
+            font-size: 25px;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffeb3b;
+        }
+
+        .hosted-by {
+            font-weight: bold;
+            color: #3949ab;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content container-fluid">
+            <img src="" class="logo">
+            <nav>
+                <a href="#">Log In</a>
+                <a href="#">What's New</a>
+                <a href="#">Discover</a>
+                <a href="#">Pricing</a>
+                <a href="#">Help</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="event row">
+            <div class="event-details col-md-6">
+                <img src="https://clipart-library.com/newhp/110-1104699_woman-clipart-images-png-cartoon-business-woman-transparent.png" alt="Speaker" class="speaker-photo">
+                <div>
+                    <div class="hosted-by">Hosted by Ivy A. Hulagno</div>
+                    <div>Web Designer at Featurepreneur</div>
+                </div>
+            </div>
+            <div class="event-info col-md-6">
+                <h1>Web Innovation Summit 2024</h1>
+                <p>Thursday, October 8, 2024<br>1:00 PM - 3:00 PM GMT-8<br>YouTube</p>
+                <button class="btn btn-primary-custom">Get Tickets</button>
+            </div>
+            <div class="ticket-options col-12">
+                <h2>Get Tickets</h2>
+                <select class="form-control mb-3">
+                    <option value="standard">Standard - Free</option>
+                    <option value="donate">Donate - $15.00</option>
+                </select>
+                <button class="btn btn-secondary-custom">Register</button>
+            </div>
+        </section>
+
+        <section class="about-event">
+            <h2>About Event</h2>
+            <p>The Featurepreneur team invites you to our upcoming webinar, which will take place on October 8th at 1:00 p.m. PT.</p>
+            <p><strong>Topic:</strong> Web Innovation Summit 2024<br>
+            <strong>Speakers:</strong> Ivy Hulagno (Web Designer at Featurepreneur)<br>
+            <strong>Participation:</strong> free (but you'll be required to register)</p>
+            <p>The Web Innovation Summit 2024 is designed to showcase breakthrough innovations in the field of machine learning and artificial intelligence. This summit will provide a platform for industry leaders, pioneering researchers, and technology developers to explore the newest frontiers of ML technology, including applications in robotics, healthcare, finance, and autonomous systems.</p>
+            <p>This presentation reveals how we transformed an open-source model into Albatross, capable of performing at the top of the leaderboard in both general and domain-specific tasks. Our journey involved an intensive data pipeline and training regimen, incorporating a combination of continual pre-training, fine-tuning, and preference optimization, to customize the model for the intricacies of financial tasks. We'll share our insights on overcoming the execution hurdle, which is often the downfall of AI projects in specialized domains.</p>
+            <div class="highlights">
+                <h3>Key Highlights of the Webinar:</h3>
+                <ul>
+                    <li><strong>Building Domain-Specific Models:</strong> Explore how to build an open-source model into a leading domain-specific model like Albatross – capable of excelling in both general and domain-specific tasks.</li>
+                    <li><strong>Model Transformation Techniques:</strong> Learn about the intensive data pipeline and training regimen that included continual pre-training, fine-tuning, and preference optimization.</li>
+                    <li><strong>Customization for Financial Tasks:</strong> Understand the specific strategies used to tailor Albatross for financial tasks, addressing the unique intricacies of this field.</li>
+                    <li><strong>Importance of Performance Metrics:</strong> Gain insight into why establishing high-performance benchmarks (like p99s) at the model level is crucial for success in finance-specific applications, where current financial LLMs often focus only on pre-training or supervised fine-tuning.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="speaker">
+            <h2>Speaker</h2>
+            <p>Ivy is a Web Designer at Featurepreneur, a full stack AI platform that enables businesses to build customized agents to power enterprise workloads. Known for her pioneering work in LLMs and fine-tuning, Ivy is a frequent contributor to the AI and MLOps community. Prior to Gradient, Ivy led machine learning teams at Splunk and Box, transitioning over from a nearly decade-long career as an algorithmic trader at quant hedge funds like Stevens Capital, Paloma Partners, and TD Securities. Ivy holds a dual bachelors degree in mathematics and finance from the University of Pennsylvania.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Subscribe</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+
+        </div>
+        <a href="#" class="host-event"></a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
+
