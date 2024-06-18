@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st Project Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eff8fc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1290px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .header img {
+            width: 300px;
+        }
+        .header input {
+            width: 700px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .header button {
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tabs {
+            display: flex;
+            margin-top: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tabs div {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tabs .active {
+            border-bottom: 1.5px solid #6c63ff;
+            color: #6c63ff;
+        }
+        .info {
+            background-color: #e9e9ff;
+            color: #6c63ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .filters {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 28px;
+        }
+        .filters select {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: rgba(251, 248, 248, 0.994);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 250px;
+            text-align: center;
+            flex: 1 1 calc(25% - 20px);
+        }
+        .profile-img {
+            border-radius: 100%;
+            width: 70px;
+            height: 70px;
+        }
+        .username {
+            color: #6c63ff;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .fullname {
+            color: #0a0707;
+            margin-bottom: 15px;
+        }
+        .github-link {
+            color: #da8a00;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .github-link svg {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .highlight {
+            color: #6c63ff;
+        }
+        .bio {
+            color: #666;
+            margin-top: 10px;
+        }
+        .footer {
+            background-color: #cbcaf7;
+            text-align: center;
+            border-radius: 5px;
+            margin: 30px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+        .footer .top {
+            background-color: #f9f9f9;
+            padding: 10px 0;
+            border-bottom: 1px solid #f9f9f9;
+        }
+        .footer .top a {
+
+            text-decoration: slateblue;
+        }
+        .footer .bottom {
+            background-color: #c9c7fc;
+            padding: 20px 0;
+        }
+        .footer .bottom a {
+            color: #d48d0a;
+            text-decoration:none;
+        }
+        .footer .bottom .heart {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>Featurepreneurship</div>
+            <input type="text" placeholder="Search...">
+            <button class="btn btn-primary">Login</button>
+        </div>
+        <div class="tabs">
+            <div>Trending repositories</div>
+            <div class="active">Trending developers</div>
+        </div>
+        <div class="info">
+            GitHub trending developers data is fetched since 16 Oct, 2023. Developers details are updated every 48 hours.
+        </div>
+        <div class="filters">
+            <div>
+                <label for="time-period">Trending developers</label>
+                <select id="time-period">
+                    <option>All days</option>
+                    <option>weekly</option>
+                    <option>monthly</option>
+                    <option>yearly</option>
+                </select>
+            </div>
+            <div>
+                <label for="languages">All Languages</label>
+                <select id="languages">
+                    <option>All Languages</option>
+                    <option>English</option>
+                    <option>German</option>
+                    <option>Danish</option>
+                    <option>Tamil</option>
+                </select>
+            </div>
+            <div>
+                <label for="show-count">Show</label>
+                <select id="show-count">
+                    <option>50</option>
+                    <option>30</option>
+                    <option>20</option>
+                    <option>10</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/12345678?v=4" alt="Profile Image" class="profile-img">
+                <div class="username">emilk</div>
+                <div class="fullname">Emil Ernerfeldt</div>
+                <a href="https://github.com/emilk" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">93</span> times of all days.</div>
+                <div class="bio">Rust coder, creator of egui, CTO of rerun.io. I want instant feedback and robust code.</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/3" alt="Profile Image" class="profile-img">
+                <div class="username">oobabooga</div>
+                <div class="fullname">Oobabooga</div>
+                <a href="https://github.com/oobabooga" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">77</span> times of all days.</div>
+                <div class="bio">Lymin Zhang (Lymin Zhang)</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/2" alt="Profile Image" class="profile-img">
+                <div class="username">azure</div>
+                <div class="fullname">Azure SDK Bot</div>
+                <a href="https://github.com/azure" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">78</span> times of all days.</div>
+                <div class="bio">Service account for the Azure SDK Team</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/1" alt="Profile Image" class="profile-img">
+                <div class="username">emerald</div>
+                <div class="fullname">Emerald Young</div>
+                <a href="https://github.com/emerald" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">57</span> times of all days.</div>
+                <div class="bio">Data Science Manager</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/6" alt="Profile Image" class="profile-img">
+                <div class="username">shwerin</div>
+                <div class="fullname">Shwerin Lanchw</div>
+                <a href="https://github.com/shwerin" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">89</span> times of all days.</div>
+                <div class="bio">Master in Machine Learning, Python , Data Science</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/7" alt="Profile Image" class="profile-img">
+                <div class="username">rhyeniel</div>
+                <div class="fullname">Rhyeniel LLabnez </div>
+                <a href="https://github.com/rhyniel" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">94</span> times of all days.</div>
+                <div class="bio">Building trust-centered leadership, teams & organizations where people can be & do their best.</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/4" alt="Profile Image" class="profile-img">
+                <div class="username">joshua</div>
+                <div class="fullname">Joshua Freedman</div>
+                <a href="https://github.com/joshua" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">95</span> times of all days.</div>
+                <div class="bio">Director, Six Seconds The EQ Network,Greater China and España, EQ Coach (ICF, PCC), The EQ Gym Author</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/12345678?v=4" alt="Profile Image" class="profile-img">
+                <div class="username">emilk</div>
+                <div class="fullname">Emil Ernerfeldt</div>
+                <a href="https://github.com/emilk" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">93</span> times of all days.</div>
+                <div class="bio">Rust coder, creator of egui, CTO of rerun.io. I want instant feedback and robust code.</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/5" alt="Profile Image" class="profile-img">
+                <div class="username">talia</div>
+                <div class="fullname">Natalia Roitman</div>
+                <a href="https://github.com/talia" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">43</span> times of all days.</div>
+                <div class="bio">Award-Winning Author, Six Seconds Preferred Partner, Thought Leader in Trust</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/8" alt="Profile Image" class="profile-img">
+                <div class="username">vette</div>
+                <div class="fullname">Yvette Bethell</div>
+                <a href="https://github.com/vette" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight"38</span> times of all days.</div>
+                <div class="bio">Global Thought Leader in Culture, Founder of the IFB Global Network (For Leaders)</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/12345678?v=4" alt="Profile Image" class="profile-img">
+                <div class="username">emilk</div>
+                <div class="fullname">Emil Ernerfeldt</div>
+                <a href="https://github.com/emilk" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">93</span> times of all days.</div>
+                <div class="bio">Rust coder, creator of egui, CTO of rerun.io. I want instant feedback and robust code.</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/4" alt="Profile Image" class="profile-img">
+                <div class="username">emilk</div>
+                <div class="fullname">Emil Ernerfeldt</div>
+                <a href="https://github.com/emilk" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">93</span> times of all days.</div>
+                <div class="bio">Rust coder, creator of egui, CTO of rerun.io. I want instant feedback and robust code.</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/2" alt="Profile Image" class="profile-img">
+                <div class="username">azure</div>
+                <div class="fullname">Azure SDK Bot</div>
+                <a href="https://github.com/emilk" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">78</span> times of all days.</div>
+                <div class="bio">Service account for the Azure SDK Team</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/6" alt="Profile Image" class="profile-img">
+                <div class="username">vladimer</div>
+                <div class="fullname">Vladimer Botsvadsez</div>
+                <a href="https://github.com/vladimer" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">83</span> times of all days.</div>
+                <div class="bio">Judge at The Webby Awards | Featured in Forbes and Bloomberg</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/5" alt="Profile Image" class="profile-img">
+                <div class="username">Luis</div>
+                <div class="fullname">Luis Bravo</div>
+                <a href="https://github.com/luis" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">63</span> times of all days.</div>
+                <div class="bio">Software Engineer | ICPC World Finalist 2021 | Competitive Programmer</div>
+            </div>
+            <div class="card">
+                <img src="https://avatars.githubusercontent.com/u/12345678?v=4" alt="Profile Image" class="profile-img">
+                <div class="username">emilk</div>
+                <div class="fullname">Emil Ernerfeldt</div>
+                <a href="https://github.com/emilk" class="github-link">
+                    <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Visit GitHub
+                </a>
+                <div class="highlight">Featured on GitHub Trending <span class="highlight">93</span> times of all days.</div>
+                <div class="bio">Rust coder, creator of egui, CTO of rerun.io. I want instant feedback and robust code.</div>
+            </div>
+            <!-- Repeat cards as necessary -->
+        </div>
+        <div class="footer">
+            <div class="top">
+                <div>FEATUREPRENEUR</div>
+                <div>Data is proudly backed up by <a href="#">Tactii</a></div>
+            </div>
+            <div class="bottom">
+                <div>&copy; 2024 Featurepreneur, created by <a href="#">Ivy Hulagno</a> with <span class="heart">❤️</span>
+                </div>
+            <div class="text-right p-3">
+                <a href="#" class="btn btn-primary btn-sm">Back to Top</a>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        </div>
+    </div>
+</body>
+</html>
