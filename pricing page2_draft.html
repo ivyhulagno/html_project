@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plans</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+            height: 5000px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .card-header {
+            background-color: #fafafa;
+            border-bottom: 2px solid #eee;
+            font-size: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            border-style: solid;
+        }
+
+        .btn-custom:hover {
+            background-color: #007bff;
+            border-color: #007bff;  
+            border-style: solid;
+            border-color: #007bff; 
+
+        }
+        .text-success {
+            color: #28a745 !important;
+        }
+
+        .text-muted {
+            color: #6c757d !important;
+        }
+
+        .info-icon {
+            font-style: normal;
+            cursor: pointer;
+            color: #888;
+            margin-left: 5px;
+        }
+
+        .info-icon:hover {
+            color: #333;
+        }
+        .btn-custom {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        border-style: solid;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .btn-custom:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 35px;
+    font-style: Monospace;
+    margin-bottom: 20px;
+}
+
+.logos img {
+    margin: 0 15px;
+    opacity: 0.5;
+    width: auto;
+    height: 50px; /* Adjust based on actual logo size */
+}
+
+.logos img:hover {
+    opacity: 1;
+}
+
+</style
+</head>
+<body>
+    <div class="container text-center my-5">
+        <header>
+            <h1 class="mb-4">Select the plan that perfectly suits your needs</h1>
+            <div class="btn-group btn-group-toggle mb-4" data-toggle="buttons">
+                <label class="btn btn-outline-primary active">
+                    <input type="radio" name="options" id="monthly" autocomplete="off" checked> Monthly
+                </label>
+                <label class="btn btn-outline-primary">
+                    <input type="radio" name="options" id="quarterly" autocomplete="off"> Quarterly <span class="badge badge-secondary ml-2">33%</span>
+                </label>
+                <label class="btn btn-outline-primary">
+                    <input type="radio" name="options" id="yearly" autocomplete="off"> Yearly <span class="badge badge-secondary ml-2">50%</span>
+                </label>
+            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Free Plan</div>
+                    <div class="card-body">
+                        <h5 class="card-title">$0 per user/month</h5>
+                        <p class="card-text">Basic features include:</p>
+                        <ul>
+                            <li>10 Projects</li>
+                            <li>1 GB Storage</li>
+                            <li>Community Support</li>
+                        </ul>
+                        <button class="btn btn-custom btn-block">Current Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Pro Plan</div>
+                    <div class="card-body">
+                        <h5 class="card-title">$10 per user/month <span class="badge badge-save"></span></h5>
+                        <p class="card-text">Includes everything in Free, plus:</p>
+                        <ul>
+                            <li>Unlimited Projects</li>
+                            <li>10 GB Storage</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <button class="btn btn-custom btn-block">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Enterprise Plan</div>
+                    <div class="card-body">
+                        <h5 class="card-title">$50 per user/month <span class="badge badge-save"></span></h5>
+                        <p class="card-text">Includes everything in Pro, plus:</p>
+                        <ul>
+                            <li>100 GB Storage</li>
+                            <li>Dedicated Support</li>
+                            <li>Advanced Analytics</li>
+                        </ul>
+                        <button class="btn btn-custom btn-block">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <body>
+
+        <div class="container my-3">
+            <h1 class="text-center mb-4">Compare our plans</h1>
+            <table class="table table-bordered table-striped text-left">
+                <thead>
+                    <tr>
+                        <th scope="col">EMAIL TRACKING</th>
+                        <th scope="col">FREE</th> 
+                        <th scope="col">PRO</th>
+                        <th scope="col">ADVANCED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unlimited tracking</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Real-time desktop notifications</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>First open alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Follow-up alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>No-reply alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tracking pixel detector</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Works with iPhone and Android phone</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                    </tr>
+                    <tr>
+                        <td>No Mailtrack signature ad</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Track clicks on links</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Group emails individually tracked</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container my-3">
+            <h1 class="text-center mb-5"></h1>
+            <table class="table table-bordered table-striped text-left">
+                <thead>
+                    <tr>
+                        <th scope="col">DOCUMENTS</th>
+                        <th scope="col">FREE</th> 
+                        <th scope="col">PRO</th>
+                        <th scope="col">ADVANCED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unlimited tracking</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Real-time desktop notifications</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>First open alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Follow-up alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>No-reply alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tracking pixel detector</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Works with iPhone and Android phone</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>No Mailtrack signature ad</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Track clicks on links</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Group emails individually tracked</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container my-3">
+            <h1 class="text-center mb-5"></h1>
+            <table class="table table-bordered table-striped text-left">
+                <thead>
+                    <tr>
+                        <th scope="col">CAMPAIGNS</th>
+                        <th scope="col">FREE</th> 
+                        <th scope="col">PRO</th>
+                        <th scope="col">ADVANCED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unlimited tracking</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Real-time desktop notifications</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>First open alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Follow-up alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>No-reply alerts</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Tracking pixel detector</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Works with iPhone and Android phone</td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>No Mailtrack signature ad</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Track clicks on links</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10008;</span></td>
+                    </tr>
+                    <tr>
+                        <td>Group emails individually tracked</td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-times text-muted"></i><span style='font-size:20px;'>&#10008;</span></td>
+                        <td><i class="fas fa-check text-success"></i><span style='font-size:20px;'>&#10004;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <div class="container text-center">
+                <!-- Button group for selecting plans -->
+                <button class="btn btn-custom">Your current plan</button>
+                <button class="btn btn-custom">Select your plan</button>
+                <button class="btn btn-custom">Select your plan</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="container">
+            <h1>More than 80,000 paying customers trust Mailtrack</h1>
+            <div class="logos">
+                <img src="https://logos-world.net/wp-content/uploads/2021/02/BBVA-Logo-700x394.png" alt="BBVA">
+                <img src="https://www.pnguniverse.com/wp-content/uploads/2021/03/Indeed-logo.png" alt="Indeed">
+                <img src="https://pluspng.com/img-png/uber-vector-png-uber-logo-4222.png" alt="Uber">
+                <img src="https://logo-marque.com/wp-content/uploads/2020/11/Yahoo-Logo-1996-2009.png" alt="Yahoo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/12/Harvard-Emblem.png" alt="Harvard College">
+                <img src="https://studentdiscountsquirrel.co.uk/wp-content/uploads/2020/05/Groupon-logo.png" alt="Groupon">
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
